@@ -1,0 +1,165 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll; /* Allow vertical scrolling */
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+   
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-txt {
+    font-size: 50pt;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header-sub {
+    font-size: 18pt;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+#content-container {
+    display: none;
+    
+    width: 100%;
+    padding-top: 20px; /* Added some padding at the top */
+    display: flex;
+    justify-content: center;
+
+    align-items: flex-start;
+    padding-bottom: 50px; /* Added padding to prevent bottom content from sticking to the bottom */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 100vw;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center; /* Center the cards horizontally */
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, height 0.3s ease;
+    height: 50px;
+    overflow: hidden;
+    width: 80vw;
+    max-width: 80vw;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 800;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card .original,
+.card .translation {
+    display: none;
+}
+
+.card .original {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    flex: 1;
+}
+
+.card .translation {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20pt;
+    flex: 1;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    height: auto;
+}
+
+.card:hover .original,
+.card:hover .translation {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: 90%;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card .original, .card .translation {
+        text-align: center;
+    }
+}
+
+#password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 18pt;
+}
+
+#password-container button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#password-container button:hover {
+    background-color: #555;
+}
