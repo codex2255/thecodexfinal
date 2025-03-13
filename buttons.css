@@ -1,0 +1,42 @@
+.main-buttons {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 999px;
+    border: 2px solid #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+.main-buttons:hover {
+    background-color: #ffffff70;
+}
+
+.button-txt {
+    font-size: 30pt;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.home-button {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 999px;
+    border: 2px solid #000;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+    color: white;
+}
+
+.home-button:hover{
+
+    background-color: #ffffff9c;
+
+
+
+}

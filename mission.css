@@ -1,6 +1,6 @@
 body {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     background-color: black;
     font-family: 'Arial', sans-serif;
     color: white;
@@ -48,4 +48,3 @@ header {
     justify-content: center;
     grid-template-columns: repeat(3, minmax(100px, auto)); /* Ensures good spacing */
 }
-
